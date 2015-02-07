@@ -23,7 +23,7 @@ It is suggested you map a volume to this container to your host file system to t
 
 For example:
 
-	`docker run 13ebd -p 8080:8080 -v ~/files:/data`
+	`docker run -d -p 8080:8080 -v ~/files:/data 13ebd`
 	
 If our build produced an image id of `13ebd`, this command executes the image `13ebd`, maps port `8080` to your localhost and maps the `/data` folder inside the container to `~/files` on your host.
 
